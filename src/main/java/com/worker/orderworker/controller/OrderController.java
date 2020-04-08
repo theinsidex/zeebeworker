@@ -20,7 +20,7 @@ public class OrderController {
     @RequestMapping(method = RequestMethod.GET,
                     produces = APPLICATION_JSON_VALUE)
     @ResponseBody
-    public Product getType(@RequestParam("name") String name,
+    public Product getProduct(@RequestParam("name") String name,
                            @RequestParam("price") BigDecimal price) {
         if(name == null || price == null){
             throw new ParameterNotFoundException("Parameter price not found");
